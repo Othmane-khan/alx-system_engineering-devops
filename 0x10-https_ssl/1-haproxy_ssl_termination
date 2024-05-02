@@ -35,10 +35,10 @@ defaults
 
 frontend myfrontend
 	bind *:80
-	bind *:443 ssl crt /etc/haproxy/certs/www.uniqueel.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/www.othmane-khan.tech.pem
 	default_backend myservers
 
 backend myservers
 	balance roundrobin
-	server web-01 54.86.220.207:80 check
-server web-02 54.237.23.192:80 check
+	server web-01 54.84.185.22 check
+        server web-02 100.27.14.110 check
